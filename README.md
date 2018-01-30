@@ -22,6 +22,10 @@ react-native link react-native-keep-awake
 react-native link react-native-vector-icons
 react-native link react-native-orientation
 ```
+If exo-player is needed then update the dependencies
+```shell
+react-native-video-exoplayer
+```
 
 ## Simple Usage
 
