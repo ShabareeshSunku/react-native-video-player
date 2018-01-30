@@ -28,7 +28,7 @@ react-native link react-native-orientation
 ```jsx
 import React from 'react'
 import { AppRegistry, StyleSheet, View } from 'react-native'
-import VideoPlayer from 'react-native-af-video-player'
+import VideoPlayer from 'react-native-video-player'
 
 const styles = StyleSheet.create({
   container: {
@@ -89,7 +89,7 @@ If you’re using react-navigation you need to manually hide the headers / tab b
 import React, { Component } from 'react'
 import { StyleSheet, View, ScrollView, Alert, Text } from 'react-native'
 
-import VideoPlayer from 'react-native-af-video-player'
+import VideoPlayer from 'react-native-video-player'
 
 const styles = StyleSheet.create({
   container: {
