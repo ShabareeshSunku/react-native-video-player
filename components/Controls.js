@@ -113,12 +113,14 @@ class Controls extends Component {
 
   loading() {
     return (
-      <View style={styles.loader}>
-        <ActivityIndicator
-          color={this.props.theme}
-          size="large"
-          style={{ transform: [{ scale: 1.5 }] }}
-        />
+      <View style={styles.container}>
+        <View style={styles.loader}>
+          <ActivityIndicator
+            color={this.props.theme}
+            size="large"
+            style={{ transform: [{ scale: 1.5 }] }}
+          />
+        </View>
       </View>
     )
   }
