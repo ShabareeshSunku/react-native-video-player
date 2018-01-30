@@ -8,7 +8,6 @@ import {
   Image
 } from 'react-native'
 
-import LinearGradient from 'react-native-linear-gradient'
 import { ToggleIcon } from './'
 
 const backgroundColor = 'transparent'
@@ -16,7 +15,8 @@ const backgroundColor = 'transparent'
 const styles = StyleSheet.create({
   container: {
     height: 35,
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundColor: 'rgba(0,0,0,0.4)'
   },
   row: {
     flexDirection: 'row',
@@ -46,9 +46,9 @@ const TopBar = (props) => {
     onMorePress
   } = props
   return (
-    <LinearGradient colors={['rgba(0,0,0,0.75)', 'rgba(0,0,0,0)']} style={styles.container}>
+    <View style={styles.container}>
       <View style={styles.row}>
-        { logo && <Image style={styles.logo} resizeMode="contain" source={{ uri: logo }} />}
+        {logo && <Image style={styles.logo} resizeMode="contain" source={{ uri: logo }} />}
         <Text
           style={[styles.title, { color: theme }]}
           numberOfLines={1}
@@ -56,7 +56,7 @@ const TopBar = (props) => {
         >
           {title}
         </Text>
-        { more &&
+        {more &&
           <ToggleIcon
             style={styles.more}
             onPress={() => onMorePress()}
@@ -68,7 +68,7 @@ const TopBar = (props) => {
           />
         }
       </View>
-    </LinearGradient>
+    </View>
   )
 }
 

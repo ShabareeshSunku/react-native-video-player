@@ -1,7 +1,6 @@
 import React from 'react'
 import { func, bool, number, string } from 'prop-types'
 import { StyleSheet } from 'react-native'
-import LinearGradient from 'react-native-linear-gradient'
 import { ToggleIcon, Time, Scrubber } from './'
 
 const styles = StyleSheet.create({
@@ -9,7 +8,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: 35,
     alignSelf: 'stretch',
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-end',
+    backgroundColor : 'rgba(0,0,0,0.4)'
   }
 })
 

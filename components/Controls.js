@@ -4,12 +4,12 @@ import {
   View,
   Animated,
   StyleSheet,
+  ActivityIndicator,
   TouchableWithoutFeedback as Touchable
 } from 'react-native'
 import {
   PlayButton,
   ControlBar,
-  Loading,
   TopBar,
   ProgressBar
 } from './'
@@ -21,6 +21,12 @@ const styles = StyleSheet.create({
   },
   flex: {
     flex: 1
+  },
+  loader: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.2)'
   }
 })
 
@@ -107,8 +113,12 @@ class Controls extends Component {
 
   loading() {
     return (
-      <View style={styles.container}>
-        <Loading theme={this.props.theme} />
+      <View style={styles.loader}>
+        <ActivityIndicator
+          color={this.props.theme}
+          size="large"
+          style={{ transform: [{ scale: 1.5 }] }}
+        />
       </View>
     )
   }

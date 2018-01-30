@@ -3,7 +3,6 @@
   "version": "0.1.5",
   "dependencies": {
     "react-native-keep-awake": "^2.0.6",
-    "react-native-linear-gradient": "^2.3.0",
     "react-native-orientation": "^3.1.0",
     "react-native-slider": "^0.11.0",
     "react-native-vector-icons": "^4.4.2",
@@ -30,8 +29,8 @@
   ],
   "maintainers": [
     {
-      "name": "abbasfreestyle",
-      "email": "abbasfreestyle@gmail.com"
+      "name": "sabareesh",
+      "email": "shabareesh.sunku@gmail.com"
     }
   ],
   "license": "MIT",
