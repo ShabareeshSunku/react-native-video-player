@@ -1,6 +1,6 @@
 import React from 'react'
 import { func, bool, number, string } from 'prop-types'
-import { StyleSheet } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import { ToggleIcon, Time, Scrubber } from './'
 
 const styles = StyleSheet.create({
