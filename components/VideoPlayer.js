@@ -65,6 +65,7 @@ class VideoPlayer extends Component {
   componentWillUnmount() {
     Dimensions.removeEventListener('change', this.onRotated)
     BackHandler.removeEventListener('hardwareBackPress', this.BackHandler)
+    Orientation.lockToPortrait()
   }
 
   onLoad(data) {
