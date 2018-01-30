@@ -1,5 +1,5 @@
 {
-  "name": "react-native-af-video-player",
+  "name": "react-native-video-player",
   "version": "0.1.5",
   "dependencies": {
     "react-native-keep-awake": "^2.0.6",
@@ -29,14 +29,14 @@
   ],
   "maintainers": [
     {
-      "name": "sabareesh",
-      "email": "shabareesh.sunku@gmail.com"
+      "name": "Sabareesh Sunku",
+      "email": "sabareesh.sunku@espn.com"
     }
   ],
   "license": "MIT",
   "author": {
-    "name": "Abbas Farid",
-    "email": "abbasfreestyle@gmail.com",
-    "url": "https://github.com/abbasfreestyle"
+    "name": "Sabareesh Sunku",
+    "email": "sabareesh.sunku@espn.com",
+    "url": "https://code.espn.com/sunkus"
   }
 }
