@@ -27,7 +27,7 @@ const ControlBar = (props) => {
   } = props
 
   return (
-    <LinearGradient colors={['rgba(0,0,0,0)', 'rgba(0,0,0,0.75)']} style={styles.container}>
+    <View style={styles.container}>
       <Time time={currentTime} theme={theme} />
       <Scrubber
         onSeek={pos => onSeek(pos)}
@@ -54,7 +54,7 @@ const ControlBar = (props) => {
         isOn={fullscreen}
         theme={theme}
       />}
-    </LinearGradient>
+    </View>
   )
 }
 
