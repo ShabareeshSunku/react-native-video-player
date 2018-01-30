@@ -24,7 +24,7 @@ const PlayButton = props => (
       onPress={() => props.onPress()}
       name={props.paused ? 'play-circle-outline' : 'pause-circle-outline'}
       color={props.theme}
-      size={75}
+      size={65}
     />
   </View>
 )
