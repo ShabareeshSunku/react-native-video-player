@@ -145,13 +145,15 @@ class Controls extends Component {
     return (
       <Touchable onPress={() => this.hideControls()}>
         <Animated.View style={[styles.container, { opacity: this.animControls }]}>
-          <TopBar
-            title={title}
-            logo={logo}
-            more={more}
-            onMorePress={() => onMorePress()}
-            theme={theme}
-          />
+          {
+            !fullscreen && <TopBar
+              title={title}
+              logo={logo}
+              more={more}
+              onMorePress={() => onMorePress()}
+              theme={theme}
+            /> || null
+          }
           <Animated.View style={[styles.flex, { transform: [{ scale: this.scale }] }]}>
             <PlayButton
               onPress={() => this.props.togglePlay()}
